@@ -8,9 +8,9 @@ import {
     MapIcon,
 } from '@heroicons/react/24/outline'
 
-const MenuList = () => {
+const MenuList = ({classname}) => {
     return (
-        <ul className='flex gap-4 mx-2 no-underline'>
+        <ul className={classname}>
             
                 <li className='flex gap-2 no-underline'>
                     <HomeIcon className='h-5 w-5 text-[#BBC7CE]' />

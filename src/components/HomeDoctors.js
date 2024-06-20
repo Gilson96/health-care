@@ -18,12 +18,12 @@ const HomeDoctors = () => {
         })
     }, []);
 
-    console.log(doctor)
+    
     return (
         <div className='flex flex-col items-center justify-center h-full bg-[#BFEDEF] p-4 gap-4 w-full'>
             <p>Meet Our expert team</p>
             <p>We are committed to endure you the best service</p>
-            <div className='flex justify-evenly w-full my-3 gap-4 items-center'>
+            <div className='flex justify-evenly w-full my-3 gap-4 items-center flex-wrap'>
                 {!loading ? "loading" : doctor.filter(doc => doc.id <= 3).map(doc => (
                     <Card
                         img={doc.avatar}

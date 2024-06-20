@@ -11,7 +11,10 @@ import img2 from '../assets/carousel-pic-2.jpg'
 import img3 from '../assets/carousel-pic-3.jpg'
 import HomeList from '../components/HomeList';
 
+
 const HomeHeroCarousel = () => {
+    
+
     return (
         <Swiper navigation={true} modules={[Navigation]} className="h-[30rem] w-full">
             <SwiperSlide>

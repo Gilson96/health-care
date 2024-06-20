@@ -17,7 +17,7 @@ const Menu = () => {
         <Link to="/"><p className='font-bold text-[#545C52]'>Health Hospital</p></Link>
       </div>
       
-      <MenuList />
+      <MenuList classname={'flex gap-4 mx-2 no-underline'}/>
 
       <div className='flex w-full justify-end mx-5 gap-3'>
         <UserIcon className='h-6 w-6 text-[#98E2C6]' />

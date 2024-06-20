@@ -101,7 +101,7 @@ console.log(parseInt(doctorId))
 
         <h1 className='flex text-xl font-bold text-[#545C52]'>Choose speciality</h1>
 
-        <div className='flex gap-5'>
+        <div className='flex flex-wrap gap-5'>
 
           <div className='flex items-center mb-4 gap-2'>
             <input type="radio" id="cardiology" name='speciality' onClick={() => { setChooseSpeciality('cardio'); }} className='h-7 w-7' />

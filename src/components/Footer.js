@@ -8,13 +8,15 @@ import {
     BuildingOffice2Icon
 } from '@heroicons/react/24/solid'
 import Logo from './Logo'
+import useScreenSize from './useScreenSize';
 
 const Footer = () => {
+    const screenSize = useScreenSize();
+
     return (
         <footer className='flex flex-col items-center justify-center h-full bg-white p-4 gap-4 w-full my-4'>
-            <div className='flex w-full h-full justify-evenly'>
+            <div className={`flex flex-wrap w-full h-full ${screenSize.width < 1024? 'justify-normal' : 'justify-evenly'}`}>
                     
-                
                 <FooterList>
                 <Logo icon={ <BuildingOffice2Icon className='h-12 w-12 text-[#98E2C6]' />}/>
                 <hr className='text-[#98E2C6]'/>
@@ -29,8 +31,8 @@ const Footer = () => {
                     <Link className='text-[#545C52]'><p className='hover:text-[#BBC7CE]'>Find a Doctor</p></Link>
                 </FooterList>
                 <FooterList title={'Social Media'}>
-                    <Link className='flex items-center gap-2 text-[#545C52]'><i className='fa-brands fa-linkedin text-4xl text-[#98E2C6]'></i><p className='hover:text-[#BBC7CE]'>LinkedIn</p></Link>
-                    <Link className='flex items-center gap-2 text-[#545C52]'><i className="fa-brands fa-square-github text-4xl text-[#98E2C6]"></i><p className='hover:text-[#BBC7CE]'>Github</p></Link>
+                    <Link to={'/https://www.linkedin.com/in/gilson-de-almeida-a51ba1194/'} className='flex items-center gap-2 text-[#545C52]'><i className='fa-brands fa-linkedin text-4xl text-[#98E2C6]'></i><p className='hover:text-[#BBC7CE]'>LinkedIn</p></Link>
+                    <Link to={'/https://github.com/Gilson96'} className='flex items-center gap-2 text-[#545C52]'><i className="fa-brands fa-square-github text-4xl text-[#98E2C6]"></i><p className='hover:text-[#BBC7CE]'>Github</p></Link>
                 </FooterList>
 
                 

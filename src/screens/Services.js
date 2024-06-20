@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import useScreenSize from '../components/useScreenSize'
 
 // icons
 import { DocumentTextIcon, ArrowLeftIcon } from '@heroicons/react/24/solid'
@@ -16,7 +17,7 @@ const Services = () => {
   const [isActive, setIsActive] = useState('')
   const [service, setService] = useState()
   const [loading, setLoading] = useState()
-
+  const screenSize = useScreenSize();
 
   useEffect(() => {
     axios.get("https://health-care-api-dn8l.onrender.com/doctors").then(({ data }) => {
@@ -33,12 +34,12 @@ const Services = () => {
         <p className='text-2xl ml-5 font-bold text-[#545C52]'>Services</p>
         <button className='mr-7 text-[#545C52] ' onClick={() => setIsActive('')}><ArrowLeftIcon className='h-7 w-7 hover:text-black' /></button>
       </div>
-      <div className='flex flex-wrap justify-center w-full h-full p-4 gap-5 my-3 '>
+      <div className={`flex flex-wrap justify-center w-full h-full p-4 gap-5 my-3`}>
 
         {!loading ? 'loading' :
           <>
           {/* cardiology */}
-            <div className='flex'>
+            <div className={`${screenSize.width < 1024? 'flex flex-col gap-5' : 'flex'}`}>
               <Card
                 img={cardiology}
                 cardClassName={`text-white
@@ -55,10 +56,10 @@ const Services = () => {
                 </Button>
               </Card>
 
-              <div className='flex flex-col mx-3'>
+              <div className={`flex flex-col mx-3`}>
                 {isActive === 'cardio' &&
                   service.filter(data => data.id === 1).map(data =>
-                    <div className='flex flex-col gap-4  text-justify h-96 w-[90%] bg-white  shadow rounded-lg justify-between p-4'>
+                    <div className={`flex flex-col gap-4  text-justify h-96 w-[90%] bg-white  shadow rounded-lg justify-between p-4 ${screenSize.width < 1024? 'h-auto w-[100%]' : 'h-96'}`}>
                        
                       <p className='text-2xl font-bold uppercase'>{data.speciality[0].name}</p>
                       <p className='text-lg leading-10 w-[80%]'>{data.speciality[0].description}</p>
@@ -70,7 +71,7 @@ const Services = () => {
             </div>
 
             {/* neurology */}
-            <div className='flex'>
+            <div className={`${screenSize.width < 1024? 'flex flex-col gap-5' : 'flex'}`}>
               <Card
                 img={neurology}
                 cardClassName={`text-white
@@ -90,7 +91,7 @@ const Services = () => {
               <div className='flex flex-col mx-3'>
                 {isActive === 'neuro' &&
                   service.filter(data => data.id === 5).map(data =>
-                    <div className='flex flex-col gap-4  text-justify h-96 w-[90%] bg-white shadow rounded-lg justify-between p-4'>
+                    <div className={`flex flex-col gap-4  text-justify h-96 w-[90%] bg-white  shadow rounded-lg justify-between p-4 ${screenSize.width < 1024? 'h-auto w-[100%]' : 'h-96'}`}>
                        
                       <p className='text-2xl font-bold uppercase'>{data.speciality[0].name}</p>
                       <p className='text-lg leading-10 w-[80%]'>{data.speciality[0].description}</p>
@@ -102,7 +103,7 @@ const Services = () => {
             </div>
 
             {/* Gastroenterology */}
-            <div className='flex'>
+            <div className={`${screenSize.width < 1024? 'flex flex-col gap-5' : 'flex'}`}>
               <Card
                 img={gastroenterology}
                 cardClassName={`text-white
@@ -122,7 +123,7 @@ const Services = () => {
               <div className='flex flex-col mx-3'>
                 {isActive === 'gastro' &&
                   service.filter(data => data.id === 3).map(data =>
-                    <div className='flex flex-col gap-4  text-justify h-96 w-[90%] bg-white  shadow rounded-lg justify-between p-4'>
+                    <div className={`flex flex-col gap-4  text-justify h-96 w-[90%] bg-white  shadow rounded-lg justify-between p-4 ${screenSize.width < 1024? 'h-auto w-[100%]' : 'h-96'}`}>
                        
                       <p className='text-2xl font-bold uppercase'>{data.speciality[0].name}</p>
                       <p className='text-lg leading-10 w-[80%]'>{data.speciality[0].description}</p>
@@ -135,7 +136,7 @@ const Services = () => {
 
               
             {/* Pulmonolgy */}
-             <div className='flex'>
+             <div className={`${screenSize.width < 1024? 'flex flex-col gap-5' : 'flex'}`}>
               <Card
                 img={pulmonology}
                 cardClassName={`text-white
@@ -155,7 +156,7 @@ const Services = () => {
               <div className='flex flex-col mx-3'>
                 {isActive === 'pulmo' &&
                   service.filter(data => data.id === 7).map(data =>
-                    <div className='flex flex-col gap-4  text-justify h-96 w-[90%] bg-white  shadow rounded-lg justify-between p-4'>
+                    <div className={`flex flex-col gap-4  text-justify h-96 w-[90%] bg-white  shadow rounded-lg justify-between p-4 ${screenSize.width < 1024? 'h-auto w-[100%]' : 'h-96'}`}>
                        
                       <p className='text-2xl font-bold uppercase'>{data.speciality[0].name}</p>
                       <p className='text-lg leading-10 w-[80%]'>{data.speciality[0].description}</p>

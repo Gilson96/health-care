@@ -31,10 +31,12 @@ const HomeServices = () => {
                     cardClassName={'text-white'}
                 >
                     <p className='uppercase font-bold text-[#545C52]'>Consult for Cardiology</p>
-                    <Button classname={'w-[80%]'}>
-                        <p className='font-bold '>See more details</p>
-                        <PlusCircleIcon className='h-7 w-7  hover:text-[#98E2C6]' />
-                    </Button>
+                    <Link to={'/services'} className='w-[80%]'>
+                        <Button classname={'w-[80%]'}>
+                            <p className='font-bold '>See more details</p>
+                            <PlusCircleIcon className='h-7 w-7  hover:text-[#98E2C6]' />
+                        </Button>
+                    </Link>
                 </Card>
 
                 <Card
@@ -42,10 +44,12 @@ const HomeServices = () => {
                     cardClassName={'text-white'}
                 >
                     <p className='uppercase font-bold text-[#545C52]'>Consult for Neurology</p>
-                    <Button classname={'w-[80%]'}>
-                        <p className='font-bold '>See more details</p>
-                        <PlusCircleIcon className='h-7 w-7  hover:text-[#98E2C6]' />
-                    </Button>
+                    <Link to={'/services'} className='w-[80%]'>
+                        <Button classname={'w-[80%]'}>
+                            <p className='font-bold '>See more details</p>
+                            <PlusCircleIcon className='h-7 w-7  hover:text-[#98E2C6]' />
+                        </Button>
+                    </Link>
                 </Card>
 
                 <Card
@@ -53,10 +57,12 @@ const HomeServices = () => {
                     cardClassName={'text-white'}
                 >
                     <p className='uppercase font-bold text-[#545C52]'>Consult for gastro</p>
-                    <Button classname={'w-[80%]'}>
-                        <p className='font-bold '>See more details</p>
-                        <PlusCircleIcon className='h-7 w-7  hover:text-[#98E2C6]' />
-                    </Button>
+                    <Link to={'/services'} className='w-[80%]'>
+                        <Button classname={'w-[80%]'}>
+                            <p className='font-bold '>See more details</p>
+                            <PlusCircleIcon className='h-7 w-7  hover:text-[#98E2C6]' />
+                        </Button>
+                    </Link>
                 </Card>
 
             </div>
