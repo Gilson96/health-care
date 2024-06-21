@@ -72,7 +72,7 @@ console.log(parseInt(doctorId))
             id="dob"
             name='dob'
             required
-            minlength="4" maxlength="10"
+            min="31-12-2022" 
             className='h-14 w-[90%] rounded shadow border border-[#BBC7CE] p-3'
           />
         </div>
@@ -101,10 +101,10 @@ console.log(parseInt(doctorId))
 
         <h1 className='flex text-xl font-bold text-[#545C52]'>Choose speciality</h1>
 
-        <div className='flex flex-wrap gap-5'>
+        <div className='flex flex-wrap gap-5' >
 
           <div className='flex items-center mb-4 gap-2'>
-            <input type="radio" id="cardiology" name='speciality' onClick={() => { setChooseSpeciality('cardio'); }} className='h-7 w-7' />
+            <input type="radio" id="cardiology" name='speciality' required onClick={() => { setChooseSpeciality('cardio'); }} className='h-7 w-7' />
             <label>Cardiology</label>
           </div>
 
