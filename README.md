@@ -11,23 +11,23 @@
 
 Health Care is a comprehensive web application aimed at improving the efficiency and accessibility of healthcare services. Developed using React for the front-end, Node.js for the back-end, and Tailwind CSS for styling, this project showcases the integration of modern web technologies to create a user-friendly and responsive interface for both patients
 
-### Technologies
+## Technologies
 
- ## Front-end: 
+ ### Front-end: 
    - React for building interactive user interfaces and Redux for managing application state efficiently.
- ## Back-end: 
+ ### Back-end: 
    - Node.js with Express.js for creating robust RESTful APIs to handle user requests and data processing.
- ## Database: 
+ ### Database: 
    - MongoDB for storing user information, transaction data, and account details securely.
- ## Styling: 
+ ### Styling: 
    - Tailwind CSS to create a responsive and visually appealing design quickly.
-### Functionality and Features
+## Functionality and Features
 
 - Appointment Scheduling: Patients can book appointments with healthcare providers.
 - Health Services: Enable users to view what kind of health services the health centre provides, including doctors 
 - Responsive Design: Ensures accessibility and usability across various devices and screen sizes.
 
-### Achievements
+## Achievements
 
 - Designed a responsive and intuitive user interface with React and Tailwind CSS, enhancing user experience.
 - Developed RESTful APIs with Node.js to manage doctor data and appointments.
