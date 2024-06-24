@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# The Health Care
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![app preview](https://github.com/Gilson96/myPortfolio/blob/master/src/assets/projectsPics/health_care_1.png?raw=true)
 
-## Available Scripts
+### View the app online 
 
-In the project directory, you can run:
+Open the live app in your browser with this link: https://gilson96.github.io/health-care/
+Open the live API in your browser with this link: https://health-care-api-dn8l.onrender.com/doctors
 
-### `npm start`
+## Intro
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Health Care is a comprehensive web application aimed at improving the efficiency and accessibility of healthcare services. Developed using React for the front-end, Node.js for the back-end, and Tailwind CSS for styling, this project showcases the integration of modern web technologies to create a user-friendly and responsive interface for both patients
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technologies
 
-### `npm test`
+ ## Front-end: 
+   - React for building interactive user interfaces and Redux for managing application state efficiently.
+ ## Back-end: 
+   - Node.js with Express.js for creating robust RESTful APIs to handle user requests and data processing.
+ ## Database: 
+   - MongoDB for storing user information, transaction data, and account details securely.
+ ## Styling: 
+   - Tailwind CSS to create a responsive and visually appealing design quickly.
+### Functionality and Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Appointment Scheduling: Patients can book appointments with healthcare providers.
+- Health Services: Enable users to view what kind of health services the health centre provides, including doctors 
+- Responsive Design: Ensures accessibility and usability across various devices and screen sizes.
 
-### `npm run build`
+### Achievements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Designed a responsive and intuitive user interface with React and Tailwind CSS, enhancing user experience.
+- Developed RESTful APIs with Node.js to manage doctor data and appointments.
+- Ensured data consistency and integrity using MongoDB as the database solution.
+- Creating a responsive design that provides a seamless experience across various devices and screen sizes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+````
