@@ -4,6 +4,7 @@
 
 ### View the app online 
 
+(Note: API response from onRender might be a bit slow.)
 - Open the live app in your browser with this link: https://gilson96.github.io/health-care/
 - Open the live API in your browser with this link: https://health-care-api-dn8l.onrender.com/doctors
 
