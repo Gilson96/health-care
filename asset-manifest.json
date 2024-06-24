@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/health-care/static/css/main.f853fe2e.css",
-    "main.js": "/health-care/static/js/main.776ca81d.js",
+    "main.css": "/health-care/static/css/main.222c1b56.css",
+    "main.js": "/health-care/static/js/main.69f11a51.js",
     "static/media/carousel-pic-1.jpg": "/health-care/static/media/carousel-pic-1.1aa45f1fcf2f374d4781.jpg",
     "static/media/doctor_5.jpg": "/health-care/static/media/doctor_5.f1df2f3a4844eb895dc1.jpg",
     "static/media/carousel-pic-2.jpg": "/health-care/static/media/carousel-pic-2.5d9a3f30f5f9ccc2a22f.jpg",
@@ -11,11 +11,11 @@
     "static/media/pulmonology.svg": "/health-care/static/media/pulmonology.7f5a2a2e9b63c5d4792fbe38e88b1156.svg",
     "static/media/gastroenterology.svg": "/health-care/static/media/gastroenterology.4f40ed1dfa6d1ac68ee19e8118423b33.svg",
     "static/media/cardiology.svg": "/health-care/static/media/cardiology.6e8b5239fadeb9412c22aaddd26137f0.svg",
-    "main.f853fe2e.css.map": "/health-care/static/css/main.f853fe2e.css.map",
-    "main.776ca81d.js.map": "/health-care/static/js/main.776ca81d.js.map"
+    "main.222c1b56.css.map": "/health-care/static/css/main.222c1b56.css.map",
+    "main.69f11a51.js.map": "/health-care/static/js/main.69f11a51.js.map"
   },
   "entrypoints": [
-    "static/css/main.f853fe2e.css",
-    "static/js/main.776ca81d.js"
+    "static/css/main.222c1b56.css",
+    "static/js/main.69f11a51.js"
   ]
 }
