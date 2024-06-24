@@ -22,17 +22,17 @@ const Footer = () => {
                 <hr className='text-[#98E2C6]'/>
                     <Link className='flex gap-2 text-[#545C52]'><MapPinIcon className='h-7 w-7 text-[#98E2C6]'/><p className='hover:text-[#BBC7CE]'>Liverpool, UK</p></Link>
                     <Link className='flex gap-2 text-[#545C52]'><EnvelopeIcon className='h-7 w-7 text-[#98E2C6]'/><p className='hover:text-[#BBC7CE]'>grafael99@gmail.com</p></Link>
-                    <Link className='flex gap-2 '><PhoneIcon className='h-7 w-7 text-[#98E2C6]'/><p className='hover:text-[#BBC7CE]'>0755612013</p></Link>
+                    <Link className='flex gap-2 '><PhoneIcon className='h-7 w-7 text-[#98E2C6]'/><p className='hover:text-[#BBC7CE]'>07886148828</p></Link>
                 </FooterList>
                 <FooterList title={'Services'}>
-                    <Link className='text-[#545C52]'><p className='hover:text-[#BBC7CE]'>Find a Doctor</p></Link>
-                    <Link className='text-[#545C52]'><p className='hover:text-[#BBC7CE]'>All services</p></Link>
-                    <Link className='text-[#545C52]'><p className='hover:text-[#BBC7CE]'>Make an Appointment</p></Link>
-                    <Link className='text-[#545C52]'><p className='hover:text-[#BBC7CE]'>Find a Doctor</p></Link>
+                    <Link to={'/doctors'} className='text-[#545C52]'><p className='hover:text-[#BBC7CE]'>Find a Doctor</p></Link>
+                    <Link className='text-[#545C52]' to={'/services'}><p className='hover:text-[#BBC7CE]'>All services</p></Link>
+                    <Link to={'/appointment'} className='text-[#545C52]'><p className='hover:text-[#BBC7CE]'>Make an Appointment</p></Link>
+                    
                 </FooterList>
                 <FooterList title={'Social Media'}>
-                    <Link to={'/https://www.linkedin.com/in/gilson-de-almeida-a51ba1194/'} className='flex items-center gap-2 text-[#545C52]'><i className='fa-brands fa-linkedin text-4xl text-[#98E2C6]'></i><p className='hover:text-[#BBC7CE]'>LinkedIn</p></Link>
-                    <Link to={'/https://github.com/Gilson96'} className='flex items-center gap-2 text-[#545C52]'><i className="fa-brands fa-square-github text-4xl text-[#98E2C6]"></i><p className='hover:text-[#BBC7CE]'>Github</p></Link>
+                    <Link to={'https://www.linkedin.com/in/gilson-de-almeida-a51ba1194/'} className='flex items-center gap-2 text-[#545C52]'><i className='fa-brands fa-linkedin text-4xl text-[#98E2C6]'></i><p className='hover:text-[#BBC7CE]'>LinkedIn</p></Link>
+                    <Link to={'https://github.com/Gilson96'} className='flex items-center gap-2 text-[#545C52]'><i className="fa-brands fa-square-github text-4xl text-[#98E2C6]"></i><p className='hover:text-[#BBC7CE]'>Github</p></Link>
                 </FooterList>
 
                 
